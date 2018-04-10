@@ -1,0 +1,17 @@
+Assignment 2.3
+Implement a function longestWord() that takes a list of words and returns the longest one.
+
+def longestWord(listWords):
+    #initialise the longWord
+    longWord =""
+    #iterate over the listWords
+    for word in listWords:
+        #if the length is greater reassign to longWord
+        if len(word) > len(longWord):
+            longWord = word
+    return longWord
+
+print(longestWord(["abhinav","sinha","abra-ca-dabra"]))
+
+#Output
+abra-ca-dabra
